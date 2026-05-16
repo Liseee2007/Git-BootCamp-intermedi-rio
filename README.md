@@ -11,20 +11,18 @@ Este repositório foi criado para servir como meu portfólio pessoal e profissio
 
   <h2>Bem-vindo ao meu Portfólio</h2>
   <p>
-    <!-- Botão para Google Sites -->
     <a href="https://sites.google.com/view/profissional-lise/início?authuser=0">
       <img src="https://img.shields.io/badge/GOOGLE%20SITES-blue?style=for-the-badge&logo=google" />
     </a>
     
-    <!-- Botão para LinkedIn (troque o link quando tiver pronto) -->
     <a href="https://linkedin.com/in/seu-perfil">
       <img src="https://img.shields.io/badge/LINKEDIN-darkblue?style=for-the-badge&logo=linkedin" />
     </a>
     
-    <!-- Botão para Email -->
     <a href="mailto:aneliselemes865@gmail.com">
       <img src="https://img.shields.io/badge/EMAIL-red?style=for-the-badge&logo=gmail" />
     </a>
   </p>
 </div>
+
 
