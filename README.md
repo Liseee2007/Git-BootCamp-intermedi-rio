@@ -13,8 +13,8 @@ Este repositório foi criado para servir como meu portfólio pessoal e profissio
 <img src="https://img.shields.io/badge/GOOGLE%20SITES-blue?style=for-the-badge&logo=google" />
 </a>
 
-<a href="[https://linkedin.com/in/seu-perfil](https://www.linkedin.com/in/anelise-lemes/)">
-<img src="https://img.shields.io/badge/LINKEDIN-darkblue?style=for-the-badge&logo=linkedin" />
+<a href="https://www.linkedin.com/in/anelise-lemes/">
+  <img src="https://img.shields.io/badge/LINKEDIN-darkblue?style=for-the-badge&logo=linkedin" />
 </a>
 
 <a href="https://liseee2007.github.io/Git-BootCamp-intermedi-rio/">
