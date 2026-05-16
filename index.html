@@ -11,33 +11,48 @@
       background: #fff0f6;
       color: #333;
     }
-    .hero {
-      height: 100vh;
-      background: linear-gradient(135deg, #ffb6c1, #ff69b4, #ffc0cb);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
+    header {
+      background: #ff69b4;
       color: white;
+      text-align: center;
+      padding: 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      animation: fadeIn 2s ease-in-out;
     }
-    .hero h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-      text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      font-weight: 600;
     }
-    .hero p {
-      font-size: 1.3em;
-      margin-bottom: 30px;
+    .banner {
+      max-width: 900px;
+      margin: 30px auto;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+      animation: fadeInUp 2s ease;
     }
-    .hero .buttons a {
+    .banner img {
+      width: 100%;
+      display: block;
+    }
+    .banner h2 {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 1.8em;
+      color: #ff69b4;
+      animation: slideDown 1.5s ease;
+    }
+    .buttons {
+      text-align: center;
+      margin: 40px 0;
+      animation: fadeInUp 2s ease;
+    }
+    .buttons a img {
       margin: 10px;
-      text-decoration: none;
-    }
-    .hero .buttons a img {
       transition: transform 0.3s, box-shadow 0.3s;
     }
-    .hero .buttons a img:hover {
+    .buttons a img:hover {
       transform: scale(1.1);
       box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     }
@@ -46,28 +61,53 @@
       color: white;
       text-align: center;
       padding: 15px;
+      margin-top: 40px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    /* Animações */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
     }
   </style>
 </head>
 <body>
-  <section class="hero">
+  <header>
     <h1>Portfólio de Anelise Lemes</h1>
-    <p>Bem-vindo ao meu espaço digital</p>
-    <div class="buttons">
-      <a href="https://sites.google.com/view/profissional-lise/início?authuser=0">
-        <img src="https://img.shields.io/badge/GOOGLE%20SITES-pink?style=for-the-badge&logo=google">
-      </a>
-      <a href="https://liseee2007.github.io/Git-BootCamp-intermedi-rio/">
-        <img src="https://img.shields.io/badge/GITHUB%20PAGES-pink?style=for-the-badge&logo=github">
-      </a>
-      <a href="https://www.linkedin.com/in/anelise-lemes/">
-        <img src="https://img.shields.io/badge/LINKEDIN-pink?style=for-the-badge&logo=linkedin">
-      </a>
-      <a href="mailto:aneliselemes865@gmail.com">
-        <img src="https://img.shields.io/badge/EMAIL-pink?style=for-the-badge&logo=gmail">
-      </a>
-    </div>
-  </section>
+  </header>
+
+  <div class="banner">
+    <!-- Mantém o banner que você já estava usando -->
+    <img src="banner.png" alt="Banner do Portfólio">
+    <h2>Bem-vindo ao meu Portfólio</h2>
+  </div>
+
+  <div class="buttons">
+    <a href="https://sites.google.com/view/profissional-lise/início?authuser=0">
+      <img src="https://img.shields.io/badge/GOOGLE%20SITES-pink?style=for-the-badge&logo=google">
+    </a>
+    <a href="https://liseee2007.github.io/Git-BootCamp-intermedi-rio/">
+      <img src="https://img.shields.io/badge/GITHUB%20PAGES-pink?style=for-the-badge&logo=github">
+    </a>
+    <a href="https://www.linkedin.com/in/anelise-lemes/">
+      <img src="https://img.shields.io/badge/LINKEDIN-pink?style=for-the-badge&logo=linkedin">
+    </a>
+    <a href="mailto:aneliselemes865@gmail.com">
+      <img src="https://img.shields.io/badge/EMAIL-pink?style=for-the-badge&logo=gmail">
+    </a>
+  </div>
 
   <footer>
-    <p>© 2026 - Desenvol
+    <p>© 2026 - Desenvolvido por Anelise Lemes</p>
+  </footer>
+</body>
+</html>
