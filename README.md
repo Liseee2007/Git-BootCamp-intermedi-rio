@@ -17,6 +17,10 @@ Este repositório foi criado para servir como meu portfólio pessoal e profissio
 <img src="https://img.shields.io/badge/LINKEDIN-darkblue?style=for-the-badge&logo=linkedin" />
 </a>
 
+<a href="https://liseee2007.github.io/Git-BootCamp-intermedi-rio/">
+  <img src="https://img.shields.io/badge/GITHUB%20PAGES-black?style=for-the-badge&logo=github" />
+</a>
+
 <a href="mailto:aneliselemes865@gmail.com">
 <img src="https://img.shields.io/badge/EMAIL-red?style=for-the-badge&logo=gmail" />
 </a>
