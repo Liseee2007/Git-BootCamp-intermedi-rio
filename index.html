@@ -43,16 +43,30 @@
       color: #ff69b4;
       animation: slideDown 1.5s ease;
     }
-    .buttons {
-      text-align: center;
-      margin: 40px 0;
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       animation: fadeInUp 2s ease;
     }
-    .buttons a img {
+    section h2 {
+      color: #ff69b4;
+      margin-bottom: 15px;
+    }
+    section p {
+      line-height: 1.6;
+    }
+    .contacts {
+      text-align: center;
+    }
+    .contacts a img {
       margin: 10px;
       transition: transform 0.3s, box-shadow 0.3s;
     }
-    .buttons a img:hover {
+    .contacts a img:hover {
       transform: scale(1.1);
       box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     }
@@ -86,25 +100,31 @@
   </header>
 
   <div class="banner">
-    <!-- Mantém o banner que você já estava usando -->
     <img src="banner.png" alt="Banner do Portfólio">
     <h2>Bem-vindo ao meu Portfólio</h2>
   </div>
 
-  <div class="buttons">
-    <a href="https://sites.google.com/view/profissional-lise/início?authuser=0">
-      <img src="https://img.shields.io/badge/GOOGLE%20SITES-pink?style=for-the-badge&logo=google">
-    </a>
-    <a href="https://liseee2007.github.io/Git-BootCamp-intermedi-rio/">
-      <img src="https://img.shields.io/badge/GITHUB%20PAGES-pink?style=for-the-badge&logo=github">
+  <!-- Seção Sobre Mim -->
+  <section>
+    <h2>Sobre Mim ✨</h2>
+    <p>
+      Minha jornada na programação começou aos 8 anos, inspirada pelos jogos que despertaram minha curiosidade.
+      Desde então, sigo explorando tecnologia com criatividade e dedicação.  
+      Tenho experiência com <strong>Python</strong>, <strong>C#</strong>, <strong>MySQL</strong>, <strong>Jupyter Notebook</strong> e <strong>VS Code</strong>.  
+      Amo transformar ideias em soluções digitais e acredito que cada projeto é uma oportunidade de aprender e crescer.
+    </p>
+  </section>
+
+  <!-- Seção Contatos -->
+  <section class="contacts">
+    <h2>Entre em Contato 💌</h2>
+    <a href="mailto:aneliselemes865@gmail.com">
+      <img src="https://img.shields.io/badge/GMAIL-pink?style=for-the-badge&logo=gmail">
     </a>
     <a href="https://www.linkedin.com/in/anelise-lemes/">
       <img src="https://img.shields.io/badge/LINKEDIN-pink?style=for-the-badge&logo=linkedin">
     </a>
-    <a href="mailto:aneliselemes865@gmail.com">
-      <img src="https://img.shields.io/badge/EMAIL-pink?style=for-the-badge&logo=gmail">
-    </a>
-  </div>
+  </section>
 
   <footer>
     <p>© 2026 - Desenvolvido por Anelise Lemes</p>
