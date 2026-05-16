@@ -7,7 +7,7 @@ Este repositório foi criado para servir como meu portfólio pessoal e profissio
 
 <div align="center">
   <!-- Banner -->
-  <img src="https://via.placeholder.com/1000x250.png?text=Bem-vindo+ao+meu+Portfólio" alt="Banner do Portfólio" />
+  <img src="banner.png" alt="Banner do Portfólio" />
 
   <h2>Bem-vindo ao meu Portfólio</h2>
   <p>
@@ -27,3 +27,4 @@ Este repositório foi criado para servir como meu portfólio pessoal e profissio
     </a>
   </p>
 </div>
+
