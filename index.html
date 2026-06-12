@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Portfólio de Anelise Lemes</title>
-  <!-- Outfit (Para o nome e títulos ficarem bonitinhos e limpos) e Plus Jakarta Sans para o texto -->
-  <link href="https://fonts.googleapis.com/css2=family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Fontes de Impacto: Calistoga (Nome com personalidade), Space Grotesk (Títulos Tech) e Inter (Leitura limpa) -->
+  <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg-color: #fff5f8;
@@ -17,7 +17,7 @@
 
     body {
       margin: 0;
-      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-family: 'Inter', sans-serif;
       background: var(--bg-color);
       color: var(--text-main);
       overflow-x: hidden;
@@ -37,7 +37,7 @@
       border-bottom: 1px solid var(--border-color);
     }
     .logo {
-      font-family: 'Outfit', sans-serif;
+      font-family: 'Space Grotesk', sans-serif;
       font-weight: 700;
       font-size: 1.4em;
       background: var(--primary-gradient);
@@ -45,10 +45,11 @@
       -webkit-text-fill-color: transparent;
     }
     .nav-links a {
+      font-family: 'Space Grotesk', sans-serif;
       color: var(--text-main);
       text-decoration: none;
       font-weight: 600;
-      font-size: 0.9em;
+      font-size: 0.95em;
       margin-left: 35px;
       transition: color 0.3s;
     }
@@ -69,7 +70,8 @@
       padding-right: 40px;
     }
     .hero-left .subtitle {
-      font-size: 0.75em;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.8em;
       font-weight: 700;
       letter-spacing: 3px;
       color: var(--pink-light);
@@ -77,12 +79,13 @@
       margin-bottom: 20px;
     }
     .hero-left h1 {
-      font-family: 'Outfit', sans-serif; /* Nova fonte mais bonitinha */
-      font-size: 4.5em;
-      font-weight: 700;
-      line-height: 1.1;
-      margin: 0 0 15px 0;
+      font-family: 'Calistoga', serif;
+      font-size: 5.2em;
+      font-weight: 400;
+      line-height: 1.05;
+      margin: 0 0 20px 0;
       letter-spacing: -1px;
+      color: var(--text-main);
     }
     .hero-left h1 span {
       background: var(--primary-gradient);
@@ -91,7 +94,8 @@
       display: block;
     }
     .hero-left .tagline {
-      font-size: 1em;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.1em;
       font-weight: 600;
       color: var(--text-muted);
       margin-bottom: 30px;
@@ -109,9 +113,10 @@
       gap: 15px;
     }
     .btn {
+      font-family: 'Space Grotesk', sans-serif;
       display: inline-block;
       padding: 16px 32px;
-      font-size: 0.85em;
+      font-size: 0.9em;
       font-weight: 600;
       border-radius: 50px;
       text-decoration: none;
@@ -139,7 +144,8 @@
       margin-bottom: 30px;
     }
     .info-label {
-      font-size: 0.7em;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.75em;
       font-weight: 700;
       letter-spacing: 2px;
       color: var(--text-muted);
@@ -152,6 +158,7 @@
       font-weight: 600;
     }
     .status-badge {
+      font-family: 'Space Grotesk', sans-serif;
       display: inline-block;
       background: rgba(255, 105, 180, 0.1);
       color: var(--pink-light);
@@ -163,26 +170,25 @@
       border: 1px solid rgba(255, 105, 180, 0.2);
     }
 
-    /* Nova Seção Baseada na imagem_5b779c.png (Formação & Referências) */
+    /* Seção de Formação baseada na imagem_5b779c.png */
     .edu-section {
       max-width: 1100px;
       margin: 100px auto;
       padding: 0 40px;
     }
     .edu-section h2 {
-      font-family: 'Outfit', sans-serif;
-      font-size: 2.2em;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2.4em;
+      font-weight: 700;
       color: var(--text-main);
       margin-bottom: 40px;
-      position: relative;
     }
     .edu-grid {
       display: grid;
-      grid-template-columns: 1.2fr 0.8fr; /* Divisão parecida com a imagem */
+      grid-template-columns: 1.2fr 0.8fr;
       gap: 40px;
       align-items: start;
     }
-    /* Card de Destaque Esquerdo */
     .edu-main-card {
       background: white;
       padding: 40px;
@@ -191,8 +197,9 @@
       box-shadow: 0 10px 30px rgba(0,0,0,0.01);
     }
     .edu-main-card h3 {
-      font-family: 'Outfit', sans-serif;
+      font-family: 'Space Grotesk', sans-serif;
       font-size: 1.6em;
+      font-weight: 700;
       margin: 0 0 10px 0;
       color: var(--text-main);
     }
@@ -202,6 +209,7 @@
       margin-bottom: 20px;
     }
     .edu-tags {
+      font-family: 'Space Grotesk', sans-serif;
       display: flex;
       gap: 15px;
       font-size: 0.85em;
@@ -214,13 +222,14 @@
       border-radius: 8px;
     }
 
-    /* Grid da Direita (Certificações / Cursos menores) */
+    /* Certificações / Skills */
     .cert-container {
       display: flex;
       flex-direction: column;
     }
     .cert-title {
-      font-size: 0.75em;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.8em;
       font-weight: 700;
       letter-spacing: 2px;
       color: var(--pink-light);
@@ -238,7 +247,7 @@
       border-radius: 12px;
       border: 1px solid rgba(0, 0, 0, 0.04);
       font-size: 0.95em;
-      font-weight: 500;
+      font-weight: 600;
       color: var(--text-main);
       transition: border-color 0.2s;
     }
@@ -246,13 +255,15 @@
       border-color: var(--pink-light);
     }
     .cert-mini-card span {
+      font-family: 'Inter', sans-serif;
       display: block;
-      font-size: 0.8em;
+      font-size: 0.85em;
+      font-weight: 400;
       color: var(--text-muted);
       margin-top: 5px;
     }
 
-    /* Outras seções do portfólio */
+    /* Seções de Conteúdo */
     section.content-section {
       max-width: 1050px;
       margin: 100px auto;
@@ -263,8 +274,9 @@
       border: 1px solid rgba(255, 105, 180, 0.1);
     }
     section.content-section h2 {
-      font-family: 'Outfit', sans-serif;
-      font-size: 2em;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2.4em;
+      font-weight: 700;
       color: var(--text-main);
       text-align: center;
       margin-bottom: 30px;
@@ -276,6 +288,7 @@
       color: var(--text-muted);
     }
 
+    /* Grid de Projetos */
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -302,8 +315,9 @@
       border-color: rgba(255, 105, 180, 0.3);
     }
     .card h3 {
-      font-family: 'Outfit', sans-serif;
-      font-size: 1.3em;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.4em;
+      font-weight: 700;
       color: var(--text-main);
       margin: 0 0 12px 0;
     }
@@ -324,11 +338,12 @@
       margin-top: 20px;
     }
     footer {
+      font-family: 'Space Grotesk', sans-serif;
       border-top: 1px solid var(--border-color);
       color: var(--text-muted);
       text-align: center;
       padding: 30px;
-      font-size: 0.9em;
+      font-size: 0.95em;
       margin-top: 120px;
     }
   </style>
@@ -350,7 +365,7 @@
     <div class="hero-left">
       <div class="subtitle">01 // Portfolio</div>
       <h1>Anelise <span>Lemes.</span></h1>
-      <div class="tagline">Estudante de Tecnologia & Desenvolvedora</div>
+      <div class="tagline">Estudante de Ciência da Computação & Desenvolvedora</div>
       
       <p>
         Buscando oportunidades para crescer na área de programação e desenvolvimento. 
@@ -396,15 +411,15 @@
     </p>
   </section>
 
-  <!-- NOVA SEÇÃO: Baseada na estrutura da imagem_5b779c.png -->
+  <!-- Seção de Formação atualizada com seu curso e faculdade -->
   <section id="formacao" class="edu-section">
     <h2>Formação & Conhecimentos 📚</h2>
     <div class="edu-grid">
       
       <!-- Bloco de Destaque da Esquerda -->
       <div class="edu-main-card">
-        <h3>Análise e Desenvolvimento de Sistemas / Computação</h3>
-        <div class="institution">Ensino Superior em Tecnologia — Brasília, DF</div>
+        <h3>Ciência da Computação</h3>
+        <div class="institution">Centro Universitário de Brasília — UniCEUB, Brasília, DF</div>
         <div class="edu-tags">
           <span>Graduação em Andamento</span>
           <span>Foco em Dev</span>
