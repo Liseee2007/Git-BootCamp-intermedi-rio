@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Portfólio de Anelise Lemes</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Mantive a Inter e adicionei Playfair Display para o estilo do nome igual ao da foto -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
@@ -11,80 +12,191 @@
       background: #fff0f6;
       color: #222;
     }
-    /* Layout inicial */
-    .hero {
-      display: grid;
-      grid-template-columns: 1fr 0.8fr; /* duas colunas proporcionais */
-      gap: 60px;
+
+    /* Navbar baseada na foto */
+    header {
+      display: flex;
+      justify-content: space-between;
       align-items: center;
-      min-height: 100vh;
-      padding: 80px;
+      padding: 30px 80px 0 80px;
+      background: transparent;
     }
-    .hero-left h1 {
-      font-size: 3.5em;
+    .logo {
+      font-family: 'Playfair Display', serif;
       font-weight: 700;
-      margin-bottom: 10px;
+      font-size: 1.5em;
       color: #111;
     }
-    .hero-left h2 {
-      font-size: 1.5em;
+    .nav-links a {
       color: #ff69b4;
-      margin-bottom: 20px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.85em;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-left: 30px;
+    }
+
+    /* Layout Hero idêntico ao da imagem_5b859f.png */
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* Divisão exata do meio */
+      min-height: calc(100vh - 70px);
+      padding: 40px 80px;
+      box-sizing: border-box;
+    }
+
+    /* Lado Esquerdo */
+    .hero-left {
+      padding-right: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .hero-left .subtitle {
+      font-size: 0.8em;
+      font-weight: 600;
+      letter-spacing: 2px;
+      color: #ff69b4;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+    .hero-left h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 4.5em;
+      font-weight: 700;
+      line-height: 1.1;
+      margin: 0 0 10px 0;
+      color: #111;
+    }
+    .hero-left h1 span {
+      font-style: italic;
+      color: #ff69b4;
+      display: block;
+    }
+    .hero-left .tagline {
+      font-size: 0.85em;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      color: #666;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+    .hero-left hr {
+      border: 0;
+      border-top: 1px solid rgba(255, 105, 180, 0.3);
+      margin-bottom: 40px;
+      width: 100%;
     }
     .hero-left p {
-      font-size: 1.1em;
-      line-height: 1.6;
+      font-size: 1.05em;
+      line-height: 1.7;
       color: #444;
-      max-width: 500px;
+      margin-bottom: 40px;
+      max-width: 520px;
     }
+    
+    /* Botões estilo a foto de referência */
+    .hero-buttons {
+      display: flex;
+      gap: 15px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 0.8em;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .btn-filled {
+      background: #ff69b4;
+      color: white;
+      border: 1px solid #ff69b4;
+    }
+    .btn-filled:hover {
+      background: #e0529c;
+    }
+    .btn-outline {
+      background: transparent;
+      color: #111;
+      border: 1px solid #111;
+    }
+    .btn-outline:hover {
+      background: #111;
+      color: #fff;
+    }
+
+    /* Lado Direito (Divisória e Infos) */
     .hero-right {
-      background: #fff;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      border-left: 1px solid rgba(255, 105, 180, 0.2); /* Linha vertical central */
+      padding-left: 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
-    .hero-right h3 {
-      margin-bottom: 20px;
-      font-size: 1.4em;
+    .info-block {
+      margin-bottom: 35px;
+      border-bottom: 1px solid rgba(255, 105, 180, 0.2);
+      padding-bottom: 20px;
+    }
+    .info-block:last-of-type {
+      border-bottom: none;
+    }
+    .info-label {
+      font-size: 0.75em;
+      font-weight: 600;
+      letter-spacing: 2px;
       color: #ff69b4;
-      border-bottom: 2px solid #ff69b4;
-      padding-bottom: 8px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
     }
-    .hero-right ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
+    .info-value {
+      font-size: 1.1em;
+      color: #222;
+      font-weight: 500;
     }
-    .hero-right ul li {
-      margin-bottom: 12px;
-      font-size: 1em;
-      color: #333;
+    .status-badge {
+      display: inline-block;
+      background: #ff69b4;
+      color: white;
+      padding: 8px 16px;
+      font-size: 0.8em;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-top: 5px;
     }
-    /* Seções */
-    section {
+
+    /* Demais seções mantidas e limpas */
+    section.content-section {
       max-width: 1000px;
-      margin: 60px auto;
+      margin: 80px auto;
       padding: 40px;
       background: white;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
-    section h2 {
+    section.content-section h2 {
       color: #ff69b4;
       text-align: center;
       margin-bottom: 20px;
       font-weight: 600;
     }
-    section p {
+    section.content-section p {
       text-align: center;
       line-height: 1.6;
       color: #444;
     }
+
     /* Projetos */
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 25px;
+      margin-top: 30px;
     }
     .card {
       background: #fff0f6;
@@ -103,6 +215,7 @@
       color: #ff69b4;
       margin-bottom: 10px;
     }
+
     /* Contatos */
     .contacts {
       text-align: center;
@@ -120,32 +233,117 @@
       text-align: center;
       padding: 15px;
       font-size: 0.9em;
+      margin-top: 80px;
     }
   </style>
 </head>
 <body>
-  <!-- Hero Section -->
-  <section class="hero">
+
+  <!-- Menu Superior baseada na foto -->
+  <header>
+    <div class="logo">Lemes.</div>
+    <div class="nav-links">
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+    </div>
+  </header>
+
+  <!-- Hero Section Modificada conforme imagem_5b859f.png -->
+  <main class="hero">
     <div class="hero-left">
-      <h1>Anelise Lemes</h1>
-      <h2>Estudante de Tecnologia</h2>
+      <div class="subtitle">01 — Portfolio</div>
+      <h1>Anelise <span>Lemes</span></h1>
+      <div class="tagline">Estudante de Tecnologia</div>
+      
+      <hr>
+      
       <p>
-        Buscando oportunidades para crescer na área de programação e desenvolvimento.  
+        Buscando oportunidades para crescer na área de programação e desenvolvimento. 
         Apaixonada por criatividade digital, automação e soluções inovadoras.
       </p>
+
+      <div class="hero-buttons">
+        <a href="https://www.linkedin.com/in/anelise-lemes/" target="_blank" class="btn btn-filled">Linkedin</a>
+        <a href="https://github.com/Liseee2007" target="_blank" class="btn btn-outline">Github</a>
+      </div>
     </div>
+
     <div class="hero-right">
-      <h3>Informações</h3>
-      <ul>
-        <li><strong>Email:</strong> aneliselemes865@gmail.com</li>
-        <li><strong>Localização:</strong> Brasília, DF – Brasil</li>
-        <li><strong>Português:</strong> Nativo</li>
-        <li><strong>Inglês:</strong> Avançado</li>
-        <li><strong>Status:</strong> Disponível para estágios</li>
-      </ul>
+      <div class="info-block">
+        <div class="info-label">Email</div>
+        <div class="info-value">aneliselemes865@gmail.com</div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-label">Localização</div>
+        <div class="info-value">Brasília, DF – Brasil</div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-label">Português</div>
+        <div class="info-value">Nativo</div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-label">Inglês</div>
+        <div class="info-value">Avançado</div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-label">Status</div>
+        <div class="status-badge">Disponível para estágios</div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Sobre Mim -->
+  <section id="sobre" class="content-section">
+    <h2>Sobre Mim 💖</h2>
+    <p>
+      Minha jornada na programação começou aos 8 anos, inspirada pelos jogos que despertaram minha curiosidade.
+      Hoje tenho experiência com <strong>Python</strong>, <strong>C#</strong>, <strong>MySQL</strong>, <strong>Jupyter Notebook</strong> e <strong>VS Code</strong>.  
+      Amo transformar ideias em soluções digitais e acredito que cada projeto é uma oportunidade de aprender e crescer.
+    </p>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projetos" class="content-section">
+    <h2>Projetos em Destaque 🌸</h2>
+    <div class="projects">
+      <a href="https://drive.google.com/drive/folders/1Bz2Q6X7eywCzm2Snwft9H_SerwKoZvwK" target="_blank" class="card">
+        <h3>Reprodução do Jogo do Mario (C#)</h3>
+        <p>Projeto desenvolvido em C#, recriando a jogabilidade clássica do Mario.</p>
+      </a>
+      <a href="https://drive.google.com/file/d/1HHSI3uyVTpT1NR44a-Kp9H3TpX2qxPN8/view" target="_blank" class="card">
+        <h3>Projeto Doki Doki (Construct 2)</h3>
+        <p>Reprodução criativa do jogo Doki Doki feita no Construct 2.</p>
+      </a>
+      <div class="card">
+        <h3>Análise de Vendas em Loja (Python)</h3>
+        <p>Projeto de análise de dados de vendas utilizando Python. (Em breve link disponível)</p>
+      </div>
     </div>
   </section>
 
-  <!-- Sobre Mim -->
-  <section>
-    <h2>Sobre Mim 💖
+  <!-- Contatos -->
+  <section class="content-section contacts">
+    <h2>Entre em Contato 💌</h2>
+    <a href="mailto:aneliselemes865@gmail.com">
+      <img src="https://img.shields.io/badge/GMAIL-pink?style=for-the-badge&logo=gmail" alt="Gmail">
+    </a>
+    <a href="https://www.linkedin.com/in/anelise-lemes/">
+      <img src="https://img.shields.io/badge/LINKEDIN-pink?style=for-the-badge&logo=linkedin" alt="LinkedIn">
+    </a>
+    <a href="https://sites.google.com/view/profissional-lise/início?authuser=0">
+      <img src="https://img.shields.io/badge/GOOGLE%20SITES-pink?style=for-the-badge&logo=google" alt="Google Sites">
+    </a>
+    <a href="https://github.com/Liseee2007">
+      <img src="https://img.shields.io/badge/GITHUB-pink?style=for-the-badge&logo=github" alt="GitHub">
+    </a>
+  </section>
+
+  <footer>
+    <p>@anelise lemes 2026</p>
+  </footer>
+</body>
+</html>
