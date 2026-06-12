@@ -8,35 +8,52 @@
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: #fff0f6;
-      color: #333;
+      background: linear-gradient(135deg, #ffb6c1, #ff69b4, #ffc0cb);
+      color: white;
     }
     /* Hero Section */
     .hero {
-      height: 100vh;
-      background: linear-gradient(135deg, #ffb6c1, #ff69b4, #ffc0cb);
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      text-align: center;
-      color: white;
+      height: 100vh;
+      padding: 0 60px;
     }
-    .hero h1 {
+    .hero-left {
+      max-width: 50%;
+    }
+    .hero-left h1 {
       font-size: 3em;
       margin-bottom: 10px;
     }
-    .hero p {
+    .hero-left h2 {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+    .hero-left p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+    .hero-right {
+      max-width: 40%;
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 12px;
+    }
+    .hero-right h3 {
+      margin-bottom: 15px;
       font-size: 1.3em;
-      margin-bottom: 30px;
+      color: #fff;
     }
-    .buttons a img {
-      margin: 10px;
-      transition: transform 0.3s;
+    .hero-right ul {
+      list-style: none;
+      padding: 0;
     }
-    .buttons a img:hover {
-      transform: scale(1.1);
+    .hero-right ul li {
+      margin-bottom: 10px;
+      font-size: 1em;
     }
+    /* Seções */
     section {
       max-width: 1000px;
       margin: 60px auto;
@@ -44,6 +61,7 @@
       background: white;
       border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      color: #333;
     }
     section h2 {
       color: #ff69b4;
@@ -54,6 +72,7 @@
       text-align: center;
       line-height: 1.6;
     }
+    /* Projetos */
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -98,21 +117,23 @@
 <body>
   <!-- Hero Section -->
   <section class="hero">
-    <h1>Portfólio de Anelise Lemes</h1>
-    <p>Explorando tecnologia com criatividade e dedicação ✨</p>
-    <div class="buttons">
-      <a href="mailto:aneliselemes865@gmail.com">
-        <img src="https://img.shields.io/badge/GMAIL-pink?style=for-the-badge&logo=gmail">
-      </a>
-      <a href="https://www.linkedin.com/in/anelise-lemes/">
-        <img src="https://img.shields.io/badge/LINKEDIN-pink?style=for-the-badge&logo=linkedin">
-      </a>
-      <a href="https://sites.google.com/view/profissional-lise/início?authuser=0">
-        <img src="https://img.shields.io/badge/GOOGLE%20SITES-pink?style=for-the-badge&logo=google">
-      </a>
-      <a href="https://github.com/Liseee2007">
-        <img src="https://img.shields.io/badge/GITHUB-pink?style=for-the-badge&logo=github">
-      </a>
+    <div class="hero-left">
+      <h1>Anelise Lemes</h1>
+      <h2>Estudante de Tecnologia</h2>
+      <p>
+        Buscando oportunidades para crescer na área de programação e desenvolvimento.  
+        Apaixonada por criatividade digital, automação e soluções inovadoras.
+      </p>
+    </div>
+    <div class="hero-right">
+      <h3>Informações</h3>
+      <ul>
+        <li><strong>Email:</strong> aneliselemes865@gmail.com</li>
+        <li><strong>Localização:</strong> Brasília, DF – Brasil</li>
+        <li><strong>Português:</strong> Nativo</li>
+        <li><strong>Inglês:</strong> Avançado</li>
+        <li><strong>Status:</strong> Disponível para estágios</li>
+      </ul>
     </div>
   </section>
 
