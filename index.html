@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Portfólio de Anelise Lemes</title>
-  <!-- Novas fontes super modernas: Syne (para títulos artísticos) e Plus Jakarta Sans (para leitura limpa) -->
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <!-- Outfit (Para o nome e títulos ficarem bonitinhos e limpos) e Plus Jakarta Sans para o texto -->
+  <link href="https://fonts.googleapis.com/css2=family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg-color: #fff5f8;
@@ -23,7 +23,7 @@
       overflow-x: hidden;
     }
 
-    /* Navbar flutuante e moderna */
+    /* Navbar flutuante */
     header {
       display: flex;
       justify-content: space-between;
@@ -37,10 +37,9 @@
       border-bottom: 1px solid var(--border-color);
     }
     .logo {
-      font-family: 'Syne', sans-serif;
-      font-weight: 800;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
       font-size: 1.4em;
-      letter-spacing: -1px;
       background: var(--primary-gradient);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -52,13 +51,12 @@
       font-size: 0.9em;
       margin-left: 35px;
       transition: color 0.3s;
-      position: relative;
     }
     .nav-links a:hover {
       color: var(--pink-light);
     }
 
-    /* Hero Layout customizado (inspirado na foto, mas com personalidade própria) */
+    /* Hero Layout */
     .hero {
       display: grid;
       grid-template-columns: 1.1fr 0.9fr; 
@@ -67,8 +65,6 @@
       box-sizing: border-box;
       align-items: center;
     }
-
-    /* Lado Esquerdo */
     .hero-left {
       padding-right: 40px;
     }
@@ -81,12 +77,12 @@
       margin-bottom: 20px;
     }
     .hero-left h1 {
-      font-family: 'Syne', sans-serif;
-      font-size: 4.8em;
-      font-weight: 800;
-      line-height: 1.05;
+      font-family: 'Outfit', sans-serif; /* Nova fonte mais bonitinha */
+      font-size: 4.5em;
+      font-weight: 700;
+      line-height: 1.1;
       margin: 0 0 15px 0;
-      letter-spacing: -2px;
+      letter-spacing: -1px;
     }
     .hero-left h1 span {
       background: var(--primary-gradient);
@@ -108,7 +104,6 @@
       max-width: 540px;
     }
     
-    /* Botões Arredondados e Modernos */
     .hero-buttons {
       display: flex;
       gap: 15px;
@@ -118,7 +113,7 @@
       padding: 16px 32px;
       font-size: 0.85em;
       font-weight: 600;
-      border-radius: 50px; /* Bordas arredondadas modernas */
+      border-radius: 50px;
       text-decoration: none;
       transition: transform 0.2s, box-shadow 0.2s;
     }
@@ -134,10 +129,8 @@
       background: white;
       color: var(--text-main);
       border: 1px solid rgba(0, 0, 0, 0.1);
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
     }
 
-    /* Lado Direito (Informações limpas com divisória curva sutil) */
     .hero-right {
       border-left: 2px solid var(--border-color);
       padding-left: 60px;
@@ -170,18 +163,107 @@
       border: 1px solid rgba(255, 105, 180, 0.2);
     }
 
-    /* Seções de Conteúdo Modernizadas */
+    /* Nova Seção Baseada na imagem_5b779c.png (Formação & Referências) */
+    .edu-section {
+      max-width: 1100px;
+      margin: 100px auto;
+      padding: 0 40px;
+    }
+    .edu-section h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.2em;
+      color: var(--text-main);
+      margin-bottom: 40px;
+      position: relative;
+    }
+    .edu-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr; /* Divisão parecida com a imagem */
+      gap: 40px;
+      align-items: start;
+    }
+    /* Card de Destaque Esquerdo */
+    .edu-main-card {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      border: 1px solid var(--border-color);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.01);
+    }
+    .edu-main-card h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.6em;
+      margin: 0 0 10px 0;
+      color: var(--text-main);
+    }
+    .edu-main-card .institution {
+      font-size: 1.05em;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+    .edu-tags {
+      display: flex;
+      gap: 15px;
+      font-size: 0.85em;
+      font-weight: 600;
+      color: var(--pink-light);
+    }
+    .edu-tags span {
+      background: rgba(255, 105, 180, 0.08);
+      padding: 6px 14px;
+      border-radius: 8px;
+    }
+
+    /* Grid da Direita (Certificações / Cursos menores) */
+    .cert-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .cert-title {
+      font-size: 0.75em;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: var(--pink-light);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .cert-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+    .cert-mini-card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid rgba(0, 0, 0, 0.04);
+      font-size: 0.95em;
+      font-weight: 500;
+      color: var(--text-main);
+      transition: border-color 0.2s;
+    }
+    .cert-mini-card:hover {
+      border-color: var(--pink-light);
+    }
+    .cert-mini-card span {
+      display: block;
+      font-size: 0.8em;
+      color: var(--text-muted);
+      margin-top: 5px;
+    }
+
+    /* Outras seções do portfólio */
     section.content-section {
       max-width: 1050px;
       margin: 100px auto;
       padding: 50px;
       background: white;
-      border-radius: 24px; /* Bordas mais suaves */
+      border-radius: 24px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.02);
       border: 1px solid rgba(255, 105, 180, 0.1);
     }
     section.content-section h2 {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Outfit', sans-serif;
       font-size: 2em;
       color: var(--text-main);
       text-align: center;
@@ -194,7 +276,6 @@
       color: var(--text-muted);
     }
 
-    /* Grid de Projetos Moderno (Cards Tipo Glass/Card Premium) */
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -207,13 +288,13 @@
       border-radius: 20px;
       border: 1px solid rgba(0, 0, 0, 0.04);
       box-shadow: 0 4px 20px rgba(0,0,0,0.02);
-      text-align: left; /* Alinhamento à esquerda fica mais moderno */
-      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-      text-decoration: none;
-      color: inherit;
+      text-align: left;
+      transition: all 0.3s ease;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      text-decoration: none;
+      color: inherit;
     }
     .card:hover {
       transform: translateY(-6px);
@@ -221,7 +302,7 @@
       border-color: rgba(255, 105, 180, 0.3);
     }
     .card h3 {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Outfit', sans-serif;
       font-size: 1.3em;
       color: var(--text-main);
       margin: 0 0 12px 0;
@@ -230,10 +311,8 @@
       text-align: left !important;
       font-size: 0.95em;
       color: var(--text-muted);
-      margin: 0;
     }
 
-    /* Central de Contatos */
     .contacts {
       text-align: center;
     }
@@ -244,37 +323,29 @@
       flex-wrap: wrap;
       margin-top: 20px;
     }
-    .contacts-grid a img {
-      transition: transform 0.2s;
-    }
-    .contacts-grid a img:hover {
-      transform: scale(1.05);
-    }
-
-    /* Rodapé Minimalista */
     footer {
       border-top: 1px solid var(--border-color);
       color: var(--text-muted);
       text-align: center;
       padding: 30px;
       font-size: 0.9em;
-      font-weight: 500;
       margin-top: 120px;
     }
   </style>
 </head>
 <body>
 
-  <!-- Header / Navigation -->
+  <!-- Navigation -->
   <header>
     <div class="logo">lise.dev</div>
     <div class="nav-links">
       <a href="#sobre">Sobre mim</a>
+      <a href="#formacao">Formação</a>
       <a href="#projetos">Projetos</a>
     </div>
   </header>
 
-  <!-- Hero Section Customizada -->
+  <!-- Hero Section -->
   <main class="hero">
     <div class="hero-left">
       <div class="subtitle">01 // Portfolio</div>
@@ -323,6 +394,43 @@
       Hoje tenho experiência com <strong>Python</strong>, <strong>C#</strong>, <strong>MySQL</strong>, <strong>Jupyter Notebook</strong> e <strong>VS Code</strong>.  
       Amo transformar ideias em soluções digitais e acredito que cada projeto é uma oportunidade de aprender e crescer.
     </p>
+  </section>
+
+  <!-- NOVA SEÇÃO: Baseada na estrutura da imagem_5b779c.png -->
+  <section id="formacao" class="edu-section">
+    <h2>Formação & Conhecimentos 📚</h2>
+    <div class="edu-grid">
+      
+      <!-- Bloco de Destaque da Esquerda -->
+      <div class="edu-main-card">
+        <h3>Análise e Desenvolvimento de Sistemas / Computação</h3>
+        <div class="institution">Ensino Superior em Tecnologia — Brasília, DF</div>
+        <div class="edu-tags">
+          <span>Graduação em Andamento</span>
+          <span>Foco em Dev</span>
+        </div>
+      </div>
+
+      <!-- Grid de "Certificações & Cursos" da Direita -->
+      <div class="cert-container">
+        <div class="cert-title">Tecnologias & Skills</div>
+        <div class="cert-grid">
+          <div class="cert-mini-card">
+            Linguagem Python Avançada
+            <span>Análise de dados e automação de scripts</span>
+          </div>
+          <div class="cert-mini-card">
+            Desenvolvimento de Jogos & Lógica C#
+            <span>Orientação a objetos aplicada</span>
+          </div>
+          <div class="cert-mini-card">
+            Banco de Dados MySQL
+            <span>Modelagem estruturada de tabelas e queries</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </section>
 
   <!-- Projetos -->
