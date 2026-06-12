@@ -170,7 +170,7 @@
       border: 1px solid rgba(255, 105, 180, 0.2);
     }
 
-    /* Seção de Formação baseada na imagem_5b779c.png */
+    /* Seção de Formação */
     .edu-section {
       max-width: 1100px;
       margin: 100px auto;
@@ -305,7 +305,8 @@
       transition: all 0.3s ease;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-start;
+      gap: 12px;
       text-decoration: none;
       color: inherit;
     }
@@ -319,12 +320,17 @@
       font-size: 1.4em;
       font-weight: 700;
       color: var(--text-main);
-      margin: 0 0 12px 0;
+      margin: 0;
+      min-height: 70px;
+      display: flex;
+      align-items: flex-start;
     }
     .card p {
       text-align: left !important;
       font-size: 0.95em;
       color: var(--text-muted);
+      margin: 0;
+      line-height: 1.6;
     }
 
     .contacts {
@@ -411,7 +417,7 @@
     </p>
   </section>
 
-  <!-- Seção de Formação atualizada com seu curso e faculdade -->
+  <!-- Seção de Formação -->
   <section id="formacao" class="edu-section">
     <h2>Formação & Conhecimentos 📚</h2>
     <div class="edu-grid">
@@ -435,7 +441,7 @@
             <span>Análise de dados e automação de scripts</span>
           </div>
           <div class="cert-mini-card">
-            Desenvolvimento de Jogos & C#
+            Desenvolvimento de Jogos & Lógica C#
             <span>Orientação a objetos aplicada</span>
           </div>
           <div class="cert-mini-card">
@@ -462,7 +468,7 @@
       </a>
       <div class="card">
         <h3>Análise de Vendas em Loja (Python)</h3>
-        <p>Projeto de análise de dados de vendas utilizando Python. (Em breve link disponível)</p>
+        <p>Projeto de análise de dados de vendas utilizando Python.</p>
       </div>
     </div>
   </section>
