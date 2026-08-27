@@ -18,7 +18,7 @@ Este repositório foi criado para servir como meu portfólio pessoal e profissio
   <img src="https://img.shields.io/badge/GITHUB%20PAGES-black?style=for-the-badge&logo=github" />
 </a>
 
-<a href="mailto:aneliselemes865@gmail.com">
+<a href="mailto:aneliselemes2007@gmail.com">
 <img src="https://img.shields.io/badge/EMAIL-red?style=for-the-badge&logo=gmail" />
 </a>
 </p>
