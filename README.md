@@ -7,7 +7,7 @@ Este repositório foi criado para servir como meu portfólio pessoal e profissio
 <div align="center">
 <img src="banner.png" alt="Banner do Portfólio" />
 
-<h2>Bem-vindo ao meu Portfólio</h2>
+<h2>Bem-vindo (a) ao meu Portfólio</h2>
 <p>
 
 <a href="https://www.linkedin.com/in/anelise-lemes/">
