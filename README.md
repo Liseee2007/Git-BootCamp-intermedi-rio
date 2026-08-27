@@ -1,4 +1,4 @@
-# Git-BootCamp-intermediario
+# Portfólio profissional
 Criando site do portfólio
 
 Este repositório foi criado para servir como meu portfólio pessoal e profissional. Aqui você encontrará projetos que refletem minhas habilidades técnicas, experiências práticas e aprendizados ao longo da minha trajetória. O objetivo é reunir trabalhos que demonstram minha capacidade de desenvolver soluções criativas e eficientes, além de apresentar minha evolução como profissional. Este espaço também funciona como uma vitrine para quem deseja conhecer melhor meu estilo de trabalho e minhas competências.
@@ -9,9 +9,6 @@ Este repositório foi criado para servir como meu portfólio pessoal e profissio
 
 <h2>Bem-vindo ao meu Portfólio</h2>
 <p>
-<a href="https://sites.google.com/view/profissional-lise/início?authuser=0">
-<img src="https://img.shields.io/badge/GOOGLE%20SITES-blue?style=for-the-badge&logo=google" />
-</a>
 
 <a href="https://www.linkedin.com/in/anelise-lemes/">
   <img src="https://img.shields.io/badge/LINKEDIN-darkblue?style=for-the-badge&logo=linkedin" />
